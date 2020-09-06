@@ -2,7 +2,7 @@ package course;
 
 import java.util.Scanner;
 
-public class menorDe3 {
+public class estCondMenorDe3 {
 
 	public static void main(String[] args) {
 		
