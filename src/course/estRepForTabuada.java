@@ -15,7 +15,7 @@ public class estRepForTabuada {
 			System.out.println(i + " x " + numero + " = " + produto);
 		}
 
-		sc.close();
+		sc.close(); 
 	}
 
 }
