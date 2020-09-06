@@ -3,7 +3,7 @@ package course;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class estSequNotaAluno {
+public class estCondNotaAluno {
 
 	public static void main(String[] args) {
 
@@ -29,3 +29,4 @@ public class estSequNotaAluno {
 	}
 
 }
+ 
