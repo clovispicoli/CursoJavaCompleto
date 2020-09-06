@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 import org.omg.CosNaming._BindingIteratorImplBase;
 
-public class bhaskara {
+public class estCondBhaskara {
 
 	public static void main(String[] args) {
 
