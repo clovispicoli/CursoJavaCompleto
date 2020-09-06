@@ -3,7 +3,7 @@ package course;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class notaAluno {
+public class estSequNotaAluno {
 
 	public static void main(String[] args) {
 
