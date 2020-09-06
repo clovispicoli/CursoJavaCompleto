@@ -2,7 +2,7 @@ package course;
 
 import java.util.Scanner;
 
-public class exercicio_03_03 {
+public class estCondExercicio03 {
 
 	public static void main(String[] args) {
 		

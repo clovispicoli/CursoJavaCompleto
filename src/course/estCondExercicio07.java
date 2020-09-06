@@ -3,7 +3,7 @@ package course;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class exercicio_07_07 {
+public class estCondExercicio07 {
 
 	public static void main(String[] args) {
 		

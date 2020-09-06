@@ -3,7 +3,7 @@ package course;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class exercicio_06 {
+public class estSequExercicio06 {
 
 	public static void main(String[] args) {
 		
