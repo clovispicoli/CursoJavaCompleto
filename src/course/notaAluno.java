@@ -18,9 +18,10 @@ public class notaAluno {
 
 		total = primeiroBi + segundoBi;
 
-		System.out.println("NOTA FINAL = " + total);
+		System.out.printf("NOTA FINAL = %.1f%n", total);
 		
-		if (total < 60) {
+		if (total < 60.0) {
+			
 			System.out.println("REPROVADO");
 		}
 
