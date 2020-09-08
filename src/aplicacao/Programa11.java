@@ -1,10 +1,15 @@
-package entidades;
+package aplicacao;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
+
+import entidades.ContratoHora;
+import entidades.Departamento;
+import entidades.Trabalhador;
+import entidades.enums.NivelTrabalho;
 
 public class Programa11 {
 
@@ -15,29 +20,29 @@ public class Programa11 {
 		Scanner sc = new Scanner(System.in);
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		
-		System.out.print("Entre com os nomes dos departamentos: ");
+		System.out.print("Insira o nome do departamento ");
 		String nomeDepartamento = sc.nextLine();
 		System.out.println("Insira os dados do trabalhador: ");
 		System.out.print("Nome: ");
-		String nome = sc.nextLine();
+		String nomeTrabalhador = sc.nextLine();
 		System.out.print("Nivel: ");
 		String nivelTrabalho = sc.nextLine();
 		System.out.print("Salario Base: ");
 		double salarioBase = sc.nextDouble();
-		Trabalhador trabalhador = new Trabalhador(nome, String.valueOf(nivelTrabalho), salarioBase, new Departamento(nomeDepartamento));
+		Trabalhador trabalhador = new Trabalhador(nomeTrabalhador, NivelTrabalho.valueOf(nivelTrabalho), salarioBase, new Departamento(nomeDepartamento));
 		
 		System.out.print("Quantos coontratos para este trabalhador? ");
 		int n = sc.nextInt();
 		
-		for (int i = 1; i < n; i++) {
-			System.out.println("Entrar no contrato #" + i + "data: ");
+		for (int i = 1; i <= n; i++) {
+			System.out.println("Insira os dados do contrato #" + i  );
 			System.out.print("Data (DD/MM/YYYY): ");
-			Date contractData = sdf.parse(sc.next());
+			Date dataContrato = sdf.parse(sc.next());
 			System.out.print("Valor por hora: ");
 			double valorPorHora = sc.nextDouble();
 			System.out.print("Duracao (horas): ");
 			int horas = sc.nextInt();
-			ContratoHora contrato = new ContratoHora(contractData, valorPorHora, horas);
+			ContratoHora contrato = new ContratoHora(dataContrato, valorPorHora, horas);
 			trabalhador.addContrato(contrato);
 		}
 		
@@ -48,7 +53,7 @@ public class Programa11 {
 		int ano = Integer.parseInt(mesEAno.substring(3));
 		System.out.println("Nome: " + trabalhador.getNome());
 		System.out.println("Departamento: " + trabalhador.getDepartamento().getNome());
-		System.out.println("Renda: " + mesEAno + ":" + String.format("%.2f", trabalhador.rendimento(ano, mes)));
+		System.out.println("Renda: " + mesEAno + ": " + String.format("%.2f", trabalhador.rendimento(ano, mes)));
 		
 		
 

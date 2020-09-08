@@ -27,9 +27,9 @@ public class Trabalhador {
 		this.departamento = departamento;
 	}
 
-	public Trabalhador(String nome2, String valueOf, double salarioBase2, Departamento departamento2) {
-		// TODO Auto-generated constructor stub
-	}
+//	public Trabalhador(String nome2, String valueOf, double salarioBase2, Departamento departamento2) {
+//		// TODO Auto-generated constructor stub
+//	}
 
 	public String getNome() {
 		return nome;
@@ -67,12 +67,12 @@ public class Trabalhador {
 		return contratos;
 	}
 
-	public void addContrato(ContratoHora contratos) {
-		contratos.add(contratos);
+	public void addContrato(ContratoHora contrato) {
+		contratos.add(contrato);
 	}
 	
-	public void removeContrato(ContratoHora contratos) {
-		contratos.remove(contratos);
+	public void removeContrato(ContratoHora contrato) {
+		contratos.remove(contrato);
 	}
 	
 	public double rendimento(int ano, int mes) {

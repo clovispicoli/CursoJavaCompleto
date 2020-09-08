@@ -47,15 +47,15 @@ public class ContratoHora {
 		return valorPorHora * horas;
 	}
 
-	public void add(ContratoHora contratos) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void remove(ContratoHora contratos) {
-		// TODO Auto-generated method stub
-		
-	}
+//	public void add(ContratoHora contratos) {
+//		// TODO Auto-generated method stub
+//
+//	}
+//
+//	public void remove(ContratoHora contratos) {
+//		// TODO Auto-generated method stub
+//
+//	}
 
 	
 }
