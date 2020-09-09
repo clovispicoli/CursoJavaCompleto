@@ -52,7 +52,7 @@ public class Pedido {
 		return itens;
 	}
 	public void addItem(ItemDoPedido item) {
-		itens.remove(item);
+		itens.add(item);
 		
 	}
 
