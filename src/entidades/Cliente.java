@@ -10,12 +10,11 @@ public class Cliente {
 	private String email;
 	private Date dataDeNascimento;
 	
-	public Cliente() {
-	
-	}
+//	public Cliente() {
+//	
+//	}
 	
 	public Cliente(String nome, String email, Date dataDeNascimento) {
-		super();
 		this.nome = nome;
 		this.email = email;
 		this.dataDeNascimento = dataDeNascimento;
@@ -47,7 +46,7 @@ public class Cliente {
 
 	@Override
 	public String toString() {
-		return nome + "(" + sdf.format(dataDeNascimento) + ") - " + email;
+		return nome + " (" + sdf.format(dataDeNascimento) + ") - " + email;
 	}
 	
 }

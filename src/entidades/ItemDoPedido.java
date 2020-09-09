@@ -7,11 +7,10 @@ public class ItemDoPedido {
 	
 	private Produto produto;
 	
-	public ItemDoPedido() {
-	}
+//	public ItemDoPedido() {
+//	}
 
 	public ItemDoPedido(Integer quantidade, Double preco, Produto produto) {
-		super();
 		this.quantidade = quantidade;
 		this.preco = preco;
 		this.produto = produto;
@@ -47,8 +46,9 @@ public class ItemDoPedido {
 
 	@Override
 	public String toString() {
-		return getProduto().getNome() 
-				+ ", $" + String.format("%.2f", preco) 
+		return produto.getNome() 
+				+ ", $" 
+				+ String.format("%.2f", preco) 
 				+ ", Quantidade: " 
 				+ quantidade 
 				+ ", SubTotal: $ " 
